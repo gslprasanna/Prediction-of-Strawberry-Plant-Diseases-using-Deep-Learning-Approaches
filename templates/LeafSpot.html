@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link href="D:\capStone\css\all.css" rel="stylesheet">
+        <link href="D:\capStone\s1.css" rel="stylesheet">
+        
+    <title>STRAWBERRY PLANT DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("/static/images2/bg2.jpg");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        :root {
+  --orange: #ffa500;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* */
+  padding: 2rem 9%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header .logo span {
+  color: var(--orange);
+}
+
+
+
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .8rem;
+  text-decoration: none;
+}
+
+
+
+header .navbar a:hover {
+  color: var(--orange);
+}
+
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover {
+  color: var(--orange);
+}
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+  color: var(--orange);
+}
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+        figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: #29AB87;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+       
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+        <a href="#" class="logo"><span>FARMER</span>FRIEND</a>
+
+        <nav class="navbar">
+            <a href="/">home</a>
+        
+            <a href="cure">Pesticides</a>
+            
+            <a href="exp">Experts</a>
+        </nav> 
+        <nav class="navbar">
+          <a href="contact">ContactUs</a>
+      </nav> 
+        
+    </header>
+
+    <div >
+        <figure>
+        <img src="/static/images2/page.jpg" class="w3-border w3-padding" alt=""
+            style="width:1520px;height: 450px;margin-bottom: 70px;">
+            <figcaption>Strawberry Plant Disease Prediction and Classification</figcaption>
+        </figure>
+    </div>
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="width: 600px; ">
+                    <h1 style="padding: 15px; background-color: rgb(18, 19, 17); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div style="width: 600px;">
+                <h2 style="font-size:200%;">Description:</span></h2>
+                <p style="font-size:170%;">Leaf spot is a common disease in strawberry plants caused by different types of fungi, including Mycosphaerella fragariae and Phomopsis obscurans.The symptoms of leaf spot usually appear on the leaves as small circular or irregular-shaped lesions with a brownish color.The disease is favored by warm and wet weather conditions and can be spread through water splashes, wind, and infected plant debris.</p>
+
+                   <p style="font-size:170%;"> लीफ स्पॉट स्ट्रॉबेरी के पौधों में एक आम बीमारी है जो विभिन्न प्रकार के कवक के कारण होती है, जिसमें माइकोस्फेरेला फ्रैगरिया और फोमोप्सिस ऑब्स्कुरन्स शामिल हैं। लीफ स्पॉट के लक्षण आमतौर पर पत्तियों पर भूरे रंग के साथ छोटे गोलाकार या अनियमित आकार के घावों के रूप में दिखाई देते हैं। इस रोग का पक्ष लिया जाता है। गर्म और गीले मौसम की स्थिति से और पानी के छींटों, हवा और संक्रमित पौधों के मलबे से फैल सकता है।</p>
+                    
+                    <p style="font-size:170%;">ఆకు మచ్చ అనేది వివిధ రకాల శిలీంధ్రాల వల్ల ఏర్పడే ఒక సాధారణ వ్యాధి, ఇందులో మైకోస్ఫేరెల్లా ఫ్రాగారియా మరియు ఫోమోప్సిస్ అబ్స్క్యూరాన్స్ ఉన్నాయి. ఆకు మచ్చ యొక్క లక్షణాలు సాధారణంగా ఆకులపై చిన్న వృత్తాకార లేదా క్రమరహిత-ఆకారపు గాయాలు గోధుమ రంగుతో కనిపిస్తాయి. వ్యాధికి అనుకూలంగా ఉంటుంది. వెచ్చని మరియు తడి వాతావరణ పరిస్థితుల ద్వారా మరియు నీటి స్ప్లాష్‌లు, గాలి మరియు సోకిన మొక్కల శిధిలాల ద్వారా వ్యాప్తి చెందుతుంది.</p>
+               </div>
+                
+            </div>
+        </div>
+
+
+        <div style="width: 1100px; ">
+            <h1 style="padding: 15px; background-color: rgb(18, 19, 17); color: white;margin-left: -0px; margin-right: -200px;"
+                class="text-center mb-5 content-h1 rounded">
+                Remedies for Disease</h1>
+        </div>
+        <p style="font-size:170%;">
+            1.To control leaf spot in strawberries, it is important to practice good sanitation, such as removing infected leaves and plant debris from the field, and avoid overhead irrigation, which can promote the spread of the disease.<br>
+            2.There are several fungicides available for the control of leaf spot in strawberries, including azoxystrobin, chlorothalonil, and captan.
+        </p>
+    <p style="font-size:170%;">
+        1.स्ट्रॉबेरी में पत्ती के धब्बों को नियंत्रित करने के लिए, अच्छी स्वच्छता का अभ्यास करना महत्वपूर्ण है, जैसे कि संक्रमित पत्तियों और पौधों के अवशेषों को खेत से हटाना, और ऊपरी सिंचाई से बचना, जो रोग के प्रसार को बढ़ावा दे सकता है।<br>
+        2.स्ट्रॉबेरी में लीफ स्पॉट के नियंत्रण के लिए कई कवकनाशी उपलब्ध हैं, जिनमें एज़ोक्सिस्ट्रोबिन, क्लोरोथालोनिल और कैप्टान शामिल हैं।
+    </p>
+<p style="font-size:170%;">
+    
+    1.స్ట్రాబెర్రీలలో ఆకు మచ్చలను నియంత్రించడానికి, పొలంలో సోకిన ఆకులు మరియు మొక్కల వ్యర్థాలను తొలగించడం వంటి మంచి పారిశుద్ధ్యాన్ని పాటించడం మరియు వ్యాధి వ్యాప్తిని ప్రోత్సహించే ఓవర్‌హెడ్ నీటిపారుదలని నివారించడం చాలా ముఖ్యం.<br>
+    2.అజోక్సిస్ట్రోబిన్, క్లోరోథలోనిల్ మరియు కాప్టాన్‌తో సహా స్ట్రాబెర్రీలలో ఆకు మచ్చల నియంత్రణకు అనేక శిలీంద్రనాశకాలు అందుబాటులో ఉన్నాయి.
+
+</p>
+
+    </div>
+
+
+
+    
+    <script src="D:\capStone\script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+ margin-top: 8%;
+ margin-left: 12%;
+ 
+}
+
+.card{
+     width: 25%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+:root {
+  --orange: #ffa500;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* */
+  padding: 2rem 9%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header .logo span {
+  color: var(--orange);
+}
+
+
+
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0.8rem;
+  text-decoration: none;
+}
+
+
+
+header .navbar a:hover {
+  color: var(--orange);
+}
+
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover {
+  color: var(--orange);
+}
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+  color: var(--orange);
+}
+
+</style>
+<body style="background-image: url(/static/images2/bg2.jpg);">
+   <header>
+
+      
+
+     <u> <a href="#" class="logo"><span>FARMER</span>FRIEND</a></u>
+
+      <nav class="navbar">
+          <a href="/">home</a>
+     
+          <a href="cure">Pesticides</a>
+       
+          <a href="exp">Experts</a>
+      </nav> 
+      <nav class="navbar">
+        <a href="contact">ContactUs</a>
+    </nav> 
+  </header>
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/ex1c.jpg">
+</div>
+<div class="title">
+ <h1>Dr.Lisa
+</h1>
+</div>
+<div class="des">
+  <h3><b>Plant Pathologist</b></h3><br>
+ <h3><b>Contact Number: </b>9123458755</h3><br>
+ <h3><b>Email: </b>lisa@gmail.com</h3><br><br>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/ex2c.jpg">
+</div>
+<div class="title">
+  <h1>Dr.Uday
+ </h1>
+ </div>
+ <div class="des">
+   <h3><b>Plant Pathologist</b></h3><br>
+  <h3><b>Contact Number: </b>6302634956</h3><br>
+  <h3><b>Email: </b>uday@gmail.com</h3><br><br>
+ </div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/exp4.jpg">
+</div>
+<div class="title">
+  <h1>Dr.Priya
+ </h1>
+ </div>
+ <div class="des">
+   <h3><b>Plant Pathologist</b></h3><br>
+  <h3><b>Contact Number: </b>9146587659</h3><br>
+  <h3><b>Email: </b>priya@gmail.com</h3><br><br>
+ </div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/exp5.jpg">
+</div>
+<div class="title">
+  <h1>Dr. K. G. Mukerji
+ </h1>
+ </div>
+ <div class="des">
+   <h3><b>Plant Pathologist</b></h3><br>
+  <h3><b>Contact Number: </b>9123458755</h3><br>
+  <h3><b>Email: </b>mukerji@gmail.com</h3><br><br>
+ </div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/exp3.jpg">
+</div>
+<div class="title">
+  <h1>Dr.Ramakrishnan
+ </h1>
+ </div>
+ <div class="des">
+   <h3><b>Plant Pathologist</b></h3><br>
+  <h3><b>Contact Number: </b>9267489012</h3><br>
+  <h3><b>Email: </b>ramakrisnana@gmail.com</h3><br><br>
+ </div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="/static/images2/exp6.webp">
+</div>
+<div class="title">
+  <h1>Dr. Indu
+ </h1>
+ </div>
+ <div class="des">
+   <h3><b>Plant Pathologist</b></h3><br>
+  <h3><b>Contact Number: </b>9876432184</h3><br>
+  <h3><b>Email: </b>indu@gmail.com</h3><br><br>
+ </div>
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
+

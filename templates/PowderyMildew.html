@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link href="D:\capStone\css\all.css" rel="stylesheet">
+        <link href="D:\capStone\s1.css" rel="stylesheet">
+        
+    <title>STRAWBERRY PLANT DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("/static/images2/bg2.jpg");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        :root {
+  --orange: #ffa500;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* */
+  padding: 2rem 9%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header .logo span {
+  color: var(--orange);
+}
+
+
+
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .8rem;
+  text-decoration: none;
+}
+
+
+
+header .navbar a:hover {
+  color: var(--orange);
+}
+
+header .icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+header .icons i:hover {
+  color: var(--orange);
+}
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+  color: var(--orange);
+}
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+        figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: #29AB87;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+       
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+       
+
+        <a href="#" class="logo"><span>FARMER</span>FRIEND</a>
+
+        <nav class="navbar">
+            <a href="/">home</a>
+        
+            <a href="cure">Pesticides</a>
+            
+            <a href="exp">Experts</a>
+        </nav> 
+        <nav class="navbar">
+          <a href="contact">ContactUs</a>
+      </nav> 
+        
+    </header>
+
+    <div >
+        <figure>
+        <img src="/static/images2/page.jpg" class="w3-border w3-padding" alt=""
+            style="width:1520px;height: 450px;margin-bottom: 70px;">
+            <figcaption>Strawberry Plant Disease Prediction and Classification</figcaption>
+</figure>
+    </div>
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="width: 600px; ">
+                    <h1 style="padding: 15px; background-color: rgb(18, 19, 17); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div style="width: 600px;">
+                <h2 style="font-size:200%;">Description:</span></h2>
+                <p class="text" style="font-size:170%;">Powdery mildew is a common fungal disease that affects strawberry plants. The disease is caused by different species of fungi, such as Podosphaera aphanis and Sphaerotheca macularis, which grow on the surface of plant leaves, stems, and flowers, forming a white or grayish powdery coating.Powdery mildew can be favored by warm and humid weather conditions, as well as poor air circulation and high nitrogen fertilization.</p>
+
+                <p class="text" style="font-size:170%;">पाउडरी मिल्ड्यू (ख़स्ता फफूंदी) एक सामान्य कवक रोग है जो स्ट्रॉबेरी के पौधों को प्रभावित करता है। रोग कवक की विभिन्न प्रजातियों के कारण होता है, जैसे पोडोस्फेरा अपानिस और स्पैरोथेका मैक्युलेरिस, जो पौधों की पत्तियों, तनों और फूलों की सतह पर उगते हैं, एक सफेद या भूरे रंग के पाउडर कोटिंग का निर्माण करते हैं।पाउडरी मिल्ड्यू गर्म और आर्द्र आबादी की स्थितियों, अच्छी हवा परिसंचरण की कमी और ऊर्जा से भरपूर उर्वरक की खुराक की स्थिति से प्रिय हो सकता है।</p>
+                    
+                <p class="text" style="font-size:170%;">బూజు తెగులు అనేది స్ట్రాబెర్రీ మొక్కలను ప్రభావితం చేసే ఒక సాధారణ ఫంగల్ వ్యాధి. ఈ వ్యాధి వివిధ జాతుల శిలీంధ్రాల వల్ల కలుగుతుంది, అవి మొక్కల ఆకులు, కాండం మరియు పువ్వుల ఉపరితలంపై పెరుగుతాయి, ఇవి తెలుపు లేదా బూడిదరంగు బూజు పూతను ఏర్పరుస్తాయి. పరిస్థితులు, అలాగే పేలవమైన గాలి ప్రసరణ మరియు అధిక నత్రజని ఫలదీకరణం.</p>
+               </div>
+                
+            </div>
+        </div>
+
+
+        <div style="width: 1100px; ">
+            <h1 style="padding: 15px; background-color: rgb(18, 19, 17); color: white;margin-left: -0px; margin-right: -200px;"
+                class="text-center mb-5 content-h1 rounded">
+                Remedies for Disease</h1>
+        </div>
+        <p class="text" style="font-size:170%;">
+            1.To control powdery mildew in strawberries, it is important to practice good cultural management practices, such as improving air circulation and reducing humidity by thinning out the canopy and avoiding overhead irrigation.<br>
+            2.There are several fungicides available for the control of powdery mildew in strawberries, including sulfur, potassium bicarbonate, and horticultural oils.
+        </p>
+        <p class="text" style="font-size:170%;">
+        
+1.स्ट्रॉबेरी में ख़स्ता फफूंदी को नियंत्रित करने के लिए, अच्छे सांस्कृतिक प्रबंधन प्रथाओं का अभ्यास करना महत्वपूर्ण है, जैसे कि हवा के संचलन में सुधार और चंदवा को पतला करके और ऊपरी सिंचाई से बचने के लिए आर्द्रता को कम करना।<br>
+2.स्ट्रॉबेरी में ख़स्ता फफूंदी के नियंत्रण के लिए सल्फर, पोटेशियम बाइकार्बोनेट और बागवानी तेलों सहित कई फफूंदनाशक उपलब्ध हैं।
+    </p>
+    <p class="text" style="font-size:170%;">
+    
+
+    1.స్ట్రాబెర్రీలలో బూజు తెగులును నియంత్రించడానికి, గాలి ప్రసరణను మెరుగుపరచడం మరియు పందిరిని సన్నబడటం ద్వారా తేమను తగ్గించడం మరియు ఓవర్‌హెడ్ నీటిపారుదలని నివారించడం వంటి మంచి సాంస్కృతిక నిర్వహణ పద్ధతులను పాటించడం చాలా ముఖ్యం.<br>
+    2.స్ట్రాబెర్రీలలో బూజు తెగులు నియంత్రణకు సల్ఫర్, పొటాషియం బైకార్బోనేట్ మరియు హార్టికల్చరల్ ఆయిల్స్‌తో సహా అనేక శిలీంద్రనాశకాలు అందుబాటులో ఉన్నాయి.
+
+</p>
+
+    </div>
+
+
+
+    
+    <script src="D:\capStone\script.js"></script>
+</body>
+
+</html>
