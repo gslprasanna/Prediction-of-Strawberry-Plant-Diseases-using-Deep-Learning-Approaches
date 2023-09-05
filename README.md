@@ -13,13 +13,13 @@ The main features of the Web application
 6)	Contact Us Page
 7)	Disease Description and Cure Page
  
-1) Home Page
+## Home Page
 
-![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/2ad3e087-9b88-466c-aecb-ec3c5941fbc4)
+![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/63a2b036-f9bd-44a4-95b6-e008737560fb)
 
-![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/f41b50c0-86d0-4b73-9e36-317276c56a4f)
+![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/0881d5c8-a40d-4a91-8962-7d893003d161)
 
-![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/2fedb40a-1ce4-4557-bfef-0021c6bec53c)
+![image](https://github.com/gslprasanna/Prediction-of-Strawberry-Plant-Diseases-using-Deep-Learning-Approaches/assets/63353137/f669d795-6716-4797-b12e-af83636a0614)
 
 The above images are the home page. The Home page contains a navigation bar with options such as Experts, Pesticides, and Contact us.
 2) Upload Image
